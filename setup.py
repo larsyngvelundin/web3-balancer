@@ -8,7 +8,8 @@ setup(
     author='Lars Lundin',
     author_email='lars.y.lundin@gmail.com',
     url='https://github.com/larsyngvelundin/web3-balancer/',
-    py_modules=['main', "__init__"],
+    packages=['src'],
+    package_dir={'': 'src'},
     install_requires=[
         'web3',
         'loguru',
