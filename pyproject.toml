@@ -1,0 +1,14 @@
+[project]
+name = "web3-balancer"
+version = "3.0.0"
+description = "A balancer for web3 connections"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["loguru>=0.7.0", "web3>=6.1.0"]
