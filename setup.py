@@ -1,12 +1,16 @@
 from setuptools import setup
 
+
 setup(
     name='web3-balancer',
     version='0.1',
-    packages=[''],
-    url='https://github.com/larsyngvelundin/web3-balancer/',
-    license='GNU GENERAL PUBLIC LICENSE',
+    description='A connection balancer for web3',
     author='Lars Lundin',
     author_email='lars.y.lundin@gmail.com',
-    description='A connection balancer for web3'
+    url='https://github.com/larsyngvelundin/web3-balancer/',
+    py_modules=['main'],
+    install_requires=[
+        'web3',
+        'loguru',
+    ],
 )
