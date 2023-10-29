@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(
-    name='web3-balancer',
+    name='web3_balancer',
     version='0.1',
     description='A connection balancer for web3',
     author='Lars Lundin',
