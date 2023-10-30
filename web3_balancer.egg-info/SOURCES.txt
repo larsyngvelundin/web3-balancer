@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+web3_balancer/__init__.py
+web3_balancer/main.py
+web3_balancer.egg-info/PKG-INFO
+web3_balancer.egg-info/SOURCES.txt
+web3_balancer.egg-info/dependency_links.txt
+web3_balancer.egg-info/requires.txt
+web3_balancer.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: web3-balancer
+Version: 0.1
+Summary: A balancer for web3 connections
+Home-page: https://github.com/larsyngvelundin/web3_balancer
+Download-URL: https://github.com/larsyngvelundin/web3_balancer/archive/refs/tags/v.011.tar.gz
+Author: Lars Lundin
+Author-email: your.email@domain.com
+License: GNU GPL-3.0 license
+Keywords: web3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
