@@ -1,17 +1,26 @@
-from setuptools import setup
-
+from distutils.core import setup
 
 setup(
     name='web3_balancer',
+    packages=['web3_balancer'],
     version='0.1',
-    description='A connection balancer for web3',
+    license='GNU GPL-3.0 license',
+    description='A balancer for web3 connections',
     author='Lars Lundin',
-    author_email='lars.y.lundin@gmail.com',
-    url='https://github.com/larsyngvelundin/web3-balancer/',
-    packages=['src'],
-    package_dir={'': 'src'},
+    author_email='your.email@domain.com',
+    url='https://github.com/larsyngvelundin/web3_balancer',
+    download_url='https://github.com/larsyngvelundin/web3_balancer/releases/v_01.tar.gz',
+    keywords=['web3'],
     install_requires=[
         'web3',
         'loguru',
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: GNU GPL-3.0 license',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ],
 )

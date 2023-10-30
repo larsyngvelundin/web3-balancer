@@ -8,7 +8,7 @@ from web3.middleware import geth_poa_middleware
 from loguru import logger
 
 
-class Balancer():
+class Web3_balancer():
     def __init__(self, rpc_list, tor=False, is_contract=False, w3=None, set_net=""):
         self.error_count = 0
         self.curr_func = ""
@@ -118,17 +118,16 @@ class Balancer():
             self._call_w3_func(func)
         if str(type(val)) == "<class 'web3._utils.datatypes.Contract'>":
             logger.debug("Returning a contract balancer")
-            contract = Balancer(self.rpc_list, tor=self.tor,
-                                is_contract=val, set_net=self._active_net)
+            contract = Web3_balancer(self.rpc_list, tor=self.tor,
+                                     is_contract=val, set_net=self._active_net)
             return contract
         self.error_count = 0
         return (val)
 
 
-url = "http://ip-api.com/json/"
-
-
 def get_tor_session():
+    url = "http://ip-api.com/json/"
+
     session = requests.Session()
     session.proxies = {
         'http': 'socks5h://localhost:9050',
