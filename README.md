@@ -15,7 +15,7 @@ After setting this up, you can use it as you would normally use web3.
 
 (Except that `block_number` is now `block_number()`)
 
-```
+```python
 >>> w3.is_connected()
 True
 >>> w3.eth.block_number()
