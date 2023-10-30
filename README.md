@@ -5,6 +5,10 @@ A class that handles web3 connections and rotates between them to balance out th
 - tor service running (if you wish to use tor)
 - loguru (only for logging)
 - List of RPC servers in a dict, see in \examples\rpc_list_formatting.py
+## Installation
+```
+pip install web3_balancer
+```
 ## Usage
 ```python
 >>> from web3_balancer import Web3_balancer
