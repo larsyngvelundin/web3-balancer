@@ -3,11 +3,11 @@ from distutils.core import setup
 setup(
     name='web3_balancer',
     packages=['web3_balancer'],
-    version='0.1',
+    version='0.1b',
     license='GNU GPL-3.0 license',
     description='A balancer for web3 connections',
     author='Lars Lundin',
-    author_email='your.email@domain.com',
+    author_email='lars.y.lundin@gmail.com',
     url='https://github.com/larsyngvelundin/web3_balancer',
     download_url='https://github.com/larsyngvelundin/web3_balancer/archive/refs/tags/v.011.tar.gz',
     keywords=['web3'],
