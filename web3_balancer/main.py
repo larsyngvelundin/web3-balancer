@@ -104,7 +104,10 @@ class Web3_balancer():
                 val = eval(f"self.is_contract.{func}")
             else:
                 val = eval(f"self._w3.{func}")
-        except (requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout, requests.exceptions.HTTPError) as error:
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.ReadTimeout,
+                requests.exceptions.HTTPError,
+                TimeoutError) as error:
             self.error_count += 1
             if (self.error_count > 1):
                 raise Exception(

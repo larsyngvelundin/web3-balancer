@@ -1,0 +1,5 @@
+## 0.1b
+Added `TimeoutError` to the exceptions to be handled.
+
+## 0.1
+Initial version
