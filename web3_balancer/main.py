@@ -104,10 +104,15 @@ class Web3_balancer():
                 val = eval(f"self.is_contract.{func}")
             else:
                 val = eval(f"self._w3.{func}")
+            if val == None:
+                logger.debug(f"Returned value is None")
+                raise TypeError 
+
         except (requests.exceptions.ConnectionError,
                 requests.exceptions.ReadTimeout,
                 requests.exceptions.HTTPError,
-                TimeoutError) as error:
+                TimeoutError,
+                TypeError) as error:
             self.error_count += 1
             if (self.error_count > 1):
                 raise Exception(
