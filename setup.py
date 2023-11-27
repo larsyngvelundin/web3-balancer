@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='web3_balancer',
     packages=['web3_balancer'],
-    version='0.1b',
+    version='0.1b1',
     license='GNU GPL-3.0 license',
     description='A balancer for web3 connections',
     author='Lars Lundin',
