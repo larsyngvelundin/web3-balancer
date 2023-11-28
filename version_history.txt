@@ -1,3 +1,6 @@
+## 0.1b1
+Added `TypeError` to the exceptions to be handled for when RPCs return empty or None values
+
 ## 0.1b
 Added `TimeoutError` to the exceptions to be handled.
 
